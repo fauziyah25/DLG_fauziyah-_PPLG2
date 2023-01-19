@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var burung = {
+            nama : "bubu",
+            warna : "biru",
+            jumlah_kaki : 2,
+            mata : {
+                warna_mata : "kuning",
+                warna_pupil : "hitam"
+            },
+            dipanggil : function (){
+                return "nyaut"
+            },
+
+            tidur : function () {
+                return "tidur di siang hari";
+            }
+        }
+
+        /*document.write(burung.nama);*/
+        document.write("dia namanya: " + burung.nama + "<br />");
+        document.write("kakinya ada: " + burung.jumlah_kaki + "<br />");
+        document.write(`warna matanya : ${burung.mata.warna_mata} <br />`);
+        document.write(`warna pupilnya : ${burung.mata.warna_pupil} <br />`);
+        document.write(`dia bernama : ${burung.warna} <br />`);
+        document.write("tidurnya " + burung.tidur() + "<br />")
+
+
+    </script>
+</body>
+</html>
