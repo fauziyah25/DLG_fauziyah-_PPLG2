@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*class ongkir{
+            #pajak = 0.2;
+
+            set pajak(nilai_pajak){
+                this.pajak = nilai_pajak;
+            }
+
+            get pajak(){
+                return this.#pajak;
+            }
+        }
+        var ongkir1 = new ongkir();
+
+        ongkir1.pajak = 1;
+        document.write(ongkir1.pajak);*/
+
+        class user {
+            #username;
+            #password;
+            #email;
+            #umur;
+            
+            //Set
+            set username(username){
+                this.#username = username;
+            }
+            set password(password){
+                this.#password = password; 
+            }
+
+            set email(email){
+                this.#email = email;
+            }
+
+            set umur(umur){
+                this.#umur = umur;
+            }
+
+            //Get
+            get username(){
+                return this.#username;
+            }
+
+            get password(){
+                return this.#password;
+            }
+
+            get email(){
+                return this.#email;
+            }
+
+            get umur(){
+                return this.#umur
+            }
+        }
+
+    var user1 = new user();
+    user1.username = "vox akuma";
+    user1.password = "6452691287";
+    user1.email = "voxakuma@gmail.com";
+    user1.umur = "23";
+
+    document.write("nama: " + user1.username+"<br />");
+    document.write("password: " + user1.password+"<br />");
+    document.write("email: " + user1.email+"<br />");
+    document.write("umur: " + user1.umur+"<br />");
+    document.write("<hr />");
+
+    var user2 = new user();
+    user2.username = "rio minase";
+    user2.password = "7483623785";
+    user2.email = "riominase@gmail.com";
+    user2.umur = "22";
+
+    document.write("nama: " + user2.username+"<br />");
+    document.write("password: " + user2.password+"<br />");
+    document.write("email: " + user2.email+"<br />");
+    document.write("umur: " + user2.umur+"<br />");
+    </script>
+</body>
+</html>
