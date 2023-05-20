@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="parent">
+    <p>ini paragraf 1</p>
+    <p>ini paragraf 2</p>
+    <p>ini paragraf 3</p>
+   </div> 
+
+   <script>
+    var tag_p = document.getElementsByTagName("p")
+    //console.log(tag_p);
+    //tag_p[0].innerText = "DI UPDATE 1";
+    //tag_p[0].style.color = "red";
+    
+
+    //perulangan biar singkat
+    //for(var i=0; i < tag_p.length; i++){
+    //    tag_p[i].style.color = "red";
+    //}
+
+    //forEach
+    for(var element of tag_p){
+        element.style.color = "red";
+    }
+
+    for(var element of tag_p){
+        var tag_p = document.getElementById("p");
+        console.dir(tag_p);
+    }
+    //console.dir(tag_p[0]);
+   </script>
+</body>
+</html>
